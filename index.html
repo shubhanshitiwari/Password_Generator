@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&family=Space+Grotesk:wght@300..700&display=swap');
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" disabled>
+                <span class="material-symbols-rounded">copy_all</span>
+            </div>
+            <div class="pass-indicator">
+                <div class="pass-length">
+                    <div class="details"><label class="title">Password Length </label>
+                    <span></span></div>
+                    <input type="range" min="1" max="30" value="6" step="1">
+                </div>
+                <div class="pass-setting">
+                    <label class="title">Pass Settings</label>
+                    <ul class="options">
+                        <li class="option">
+                        <input type="checkbox"  id="lowercase" checked >
+                        <label for="lowercase">Lowercase (a-z)</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox"  id="Uppercase">
+                        <label for="Uppercase">Uppercase (A-Z)</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox"  id="Numbers">
+                        <label for="Numbers">Numbers (0-9)</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox"  id="specialchar">
+                        <label for="specialchar">Symbols (@,$)</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox"  id="blankspace">
+                        <label for="blankspace">Blank Space</label>
+                    </li>
+
+                    </ul>
+                </div>
+            </div>
+            <button class="generate-btn">Generate Password</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
